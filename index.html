@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+ <div class="box">
+<div class="bigbox">
+<div id="displayArea" class="Space">
+    <p class="text-center">Page <span id="currentPage" class="link"></span> / <span id="totalPages" ></span>
+    </p>
+
+<table class="table">
+  <thead class="thead-light">
+     <tr>
+       <th>ID</th>
+       <th>NAME</th>
+       <th>Email</th>
+      </tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
+  </div>
+
+  <div class="Space ">
+   <div class="page-btns" id="pageBtns"></div> 
+   <div class="d-flex">
+   <button class="btn btn-dark" id="first"> <i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i> First </button>
+    <button class="btn btn-dark" id="prev" > <i class="fa fa-chevron-left"></i> Prev </button>
+    <button class="btn btn-dark" id="next" > Next <i class="fa fa-chevron-right"></i> </button>
+    <button class="btn btn-dark" id="last" > Last <i class="fa fa-chevron-right"></i> <i class="fa fa-chevron-right"></i> </button>
+    </div>
+  </div>
+</div>
+ </div>  
+   <script src="script.js"></script>
+ </body>
+</html>
